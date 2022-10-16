@@ -1,6 +1,6 @@
 async function getWeather(country) 
 {
-    let apiRespnse=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=182264c2a673482f845120657221210&q=${country}&days=3&aqi=no&alerts=no`)
+    let apiRespnse=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=182264c2a673482f845120657221210&q=${country}&days=3&aqi=no&alerts=no`)
 let finalWeather=await apiRespnse.json()
 container=finalWeather
 console.log(finalWeather)
